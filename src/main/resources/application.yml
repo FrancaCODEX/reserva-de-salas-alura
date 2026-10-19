@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: reserva-de-salas
+  profiles:
+    default: dev
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: ${PORT:8080}
